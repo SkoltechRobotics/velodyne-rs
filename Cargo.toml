@@ -1,0 +1,26 @@
+[package]
+name = "velodyne"
+version = "0.1.0"
+authors = ["Artyom Pavlov"]
+license = "MIT OR Apache-2.0"
+description = "Crate for processing Velodyne LiDAR data"
+documentation = "https://docs.rs/velodyne"
+repository = "https://github.com/SkoltechRobotics/velodyne-rs"
+edition = "2018"
+exclude = ["data/*"]
+keywords = ["lidar", "velodyne", "point-cloud"]
+categories = ["science::robotics"]
+
+[dependencies]
+xml-rs = { version = "0.8", optional = true }
+log = "0.4"
+chrono = "0.4"
+byteorder = "1"
+memmap = "0.7"
+
+[dev-dependencies]
+structopt = "0.2"
+structopt-derive = "0.2"
+
+[features]
+xml = ["xml-rs"]
