@@ -4,25 +4,23 @@
 //! ```
 //! // Listen for packets on default port with default timeout,
 //! // alternatively pcap files can be used
-//! let mut listener = velodyne::packet::PacketListener::new().unwrap();
+//! # fn main() -> Result<(), std::io::Error> {
+//! use velodyne::packet::{PacketSource, UdpSource};
+//!
+//! let mut listener = UdpSource::new()?;
 //! loop {
 //!     // Callback will be called for each point in the acquired packet,
 //!     // each packet contains 12*32=384 points in total
-//!     let res = listener.next_packet(|raw_point| {
-//!         // process `raw_point`
-//!         Ok(())
-//!     });
+//!     let res = listener.next_packet()?;
 //!     match res {
-//!         Ok(Some(packet_meta)) => {
-//!             // process packet meta information
+//!         Some((src_addr, packet)) => {
+//!             // process packet
 //!         },
 //!         // source is exhausted
-//!         Ok(None) => break,
-//!         Err(e) => {
-//!             // handle IO error
-//!         },
+//!         None => break,
 //!     }
 //! }
+//! # Ok(()) }
 //! ```
 use std::io;
 use byteorder::{ByteOrder, LE};
