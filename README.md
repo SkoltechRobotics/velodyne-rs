@@ -1,5 +1,4 @@
-# velodyne-rs
-[![crates.io](https://img.shields.io/crates/v/velodyne.svg)](https://crates.io/crates/velodyne) [![Documentation](https://docs.rs/velodyne/badge.svg)](https://docs.rs/velodyne) [![Build Status](https://travis-ci.org/SkoltechRobotics/velodyne-rs.svg?branch=master)](https://travis-ci.org/SkoltechRobotics/velodyne-rs) [![dependency status](https://deps.rs/repo/github/SkoltechRobotics/velodyne-rs/status.svg)](https://deps.rs/repo/github/SkoltechRobotics/velodyne-rs)
+# velodyne-rs [![crates.io](https://img.shields.io/crates/v/velodyne.svg)](https://crates.io/crates/velodyne) [![Documentation](https://docs.rs/velodyne/badge.svg)](https://docs.rs/velodyne) [![Build Status](https://travis-ci.org/SkoltechRobotics/velodyne-rs.svg?branch=master)](https://travis-ci.org/SkoltechRobotics/velodyne-rs) [![dependency status](https://deps.rs/repo/github/SkoltechRobotics/velodyne-rs/status.svg)](https://deps.rs/repo/github/SkoltechRobotics/velodyne-rs)
 
 Crate for processing Velodyne LiDAR data.
 
