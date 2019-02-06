@@ -24,3 +24,6 @@ structopt-derive = "0.2"
 
 [features]
 xml = ["xml-rs"]
+
+[badges]
+travis-ci = { repository = "SkoltechRobotics/velodyne-rs" }
