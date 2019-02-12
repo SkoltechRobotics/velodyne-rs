@@ -1,6 +1,6 @@
 [package]
 name = "velodyne"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Artyom Pavlov"]
 license = "MIT OR Apache-2.0"
 description = "Crate for processing Velodyne LiDAR data"

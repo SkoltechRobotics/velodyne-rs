@@ -24,6 +24,10 @@ pub struct FullPoint {
     pub timestamp: u32,
 }
 
+impl From<FullPoint> for [f32; 3] {
+    fn from(p: FullPoint) -> Self { p.xyz }
+}
+
 /// Erros ehich indicates failed point conversion
 ///
 /// Usually means that header bytes in a packet were invalid.
